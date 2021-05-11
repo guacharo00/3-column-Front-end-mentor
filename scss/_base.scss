@@ -1,0 +1,47 @@
+:root {
+  // COLORS
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+
+  // Fonts
+  --font-stack-1: "Lexend Deca", sans-serif;
+  --font-stack-2: "Big Shoulders Display", cursive;
+  --default-font-size: 1.5rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 950px) {
+    font-size: 56%;
+  }
+
+  @media screen and (max-width: 780px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-size: var(--default-font-size);
+  line-height: 1.6;
+}
+
+.small-mb {
+  margin-bottom: 3rem;
+}
+.big-mb {
+  margin-bottom: 10rem;
+}

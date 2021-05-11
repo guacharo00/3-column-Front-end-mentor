@@ -1,0 +1,36 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Very-light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-box {
+  max-width: 144rem;
+  display: flex;
+  border-radius: 1rem;
+  overflow: scroll;
+
+  @media screen and (max-width: 950px) {
+    padding: 0 3rem;
+  }
+  @media screen and (max-width: 780px) {
+    padding: 0 6rem;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 10rem 4rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
